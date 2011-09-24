@@ -1,4 +1,5 @@
 OpenBeta::Application.routes.draw do
+  root :to => "genres#index"
   resources :genres
 
   # The priority is based upon order of creation:
