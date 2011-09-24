@@ -5,8 +5,8 @@
         = pluralize(@genre.errors.count, "error") 
         prohibited this genre from being saved:
       %ul
-      - @genre.errors.full_messages.each do |msg|
-        %li= msg
+        - @genre.errors.full_messages.each do |msg|
+          %li= msg
 
   %div.field
     = f.label :name

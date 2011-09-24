@@ -1,4 +1,6 @@
 OpenBeta::Application.routes.draw do
+  resources :warnings
+
   root :to => "genres#index"
   resources :genres
 

@@ -1,0 +1,13 @@
+#notice= notice
+
+%p
+  %strong Name:
+  = @warning.name
+
+%p
+  %strong Description:
+  = @warning.description
+
+= link_to 'Edit', edit_warning_path(@warning)
+| 
+= link_to 'Back', warnings_path

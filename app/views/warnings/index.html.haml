@@ -1,0 +1,21 @@
+%h1 Listing warnings
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th 
+  
+
+  - @warnings.each do |warning|
+    %tr>
+      %td= warning.name
+      %td= warning.description
+      %td
+        = link_to 'Show', warning
+        = link_to 'Edit', edit_warning_path(warning)
+        = link_to 'Destroy', warning, :confirm => 'Are you sure?', :method => :delete
+  
+%br/
+
+= link_to 'New Warning', new_warning_path
