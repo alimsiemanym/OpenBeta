@@ -3,7 +3,8 @@
 Open Beta is a revolutionary approach to creative writing. Most fiction writers
 who publish online will generally proofread their own work, sometimes taking the
 time to have a friend "beta read," and then publish immediately. The quality of 
-the end result varies wildly, 
+the end result varies wildly, mostly due to the noticeable lack of consistent 
+editing/beta reading.
 
 Open Beta harnesses the collective knowledge of the internet, effectively crowd-
 sourcing the task of beta reading and editing. Once an author posts a draft of 
@@ -11,3 +12,8 @@ their work, members are invited to read, critique, comment, and tweak the text
 at their leisure. The author will be able to read critiques and comments, and 
 will have the option of accepting, dismissing, or merging in any changes suggested 
 by reviewers.
+
+Though initially designed for writers of 
+"{fanfiction}[http://en.wikipedia.org/wiki/Fan_fiction]," Open Beta is the ideal 
+manner to solicit feedback and grammar, style, tone, and content critiques for 
+writers of all forms of fiction.
