@@ -10,7 +10,8 @@
     %td= genre.name
     %td
       = link_to 'Show', genre
-      = link_to 'Edit', edit_genre_path(genre) %></td>
-      = link_to 'Destroy', genre, :confirm => 'Are you sure?', :method => :delete %></td>
+      = link_to 'Edit', edit_genre_path(genre)
+      = link_to 'Destroy', genre, :confirm => 'Are you sure?', :method => :delete
 
+%br/
 = link_to 'New Genre', new_genre_path

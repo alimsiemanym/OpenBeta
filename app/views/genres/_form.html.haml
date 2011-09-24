@@ -8,5 +8,10 @@
       - @genre.errors.full_messages.each do |msg|
         %li= msg
 
+  %div.field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  
   %div.actions
     = f.submit
