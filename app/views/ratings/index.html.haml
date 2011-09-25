@@ -1,0 +1,17 @@
+%h1 Listing ratings
+
+%table
+  %tr
+    %th Code
+    %th
+  - @ratings.each do |rating|
+    %tr
+      %td= rating.code
+      %td
+        = link_to 'Show', rating
+        = link_to 'Edit', edit_rating_path(rating)
+        = link_to 'Destroy', rating, :confirm => 'Are you sure?', :method => :delete
+
+%br/
+
+= link_to 'New Rating', new_rating_path

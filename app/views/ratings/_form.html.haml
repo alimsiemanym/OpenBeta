@@ -1,0 +1,17 @@
+= form_for(@rating) do |f| 
+  - if @rating.errors.any?
+    %div#error_explanation
+      %h2
+        = pluralize(@rating.errors.count, "error") 
+        prohibited this rating from being saved:
+
+      %ul
+        - @rating.errors.full_messages.each do |msg|
+          %li= msg
+
+  %div.field
+    = f.label :code
+    %br/
+    = f.text_field :code
+  %div.actions
+    = f.submit

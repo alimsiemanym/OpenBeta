@@ -1,4 +1,6 @@
 OpenBeta::Application.routes.draw do
+  resources :ratings
+
   resources :genders
 
   resources :warnings
