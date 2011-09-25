@@ -1,0 +1,22 @@
+%h1 Listing genders
+
+%table
+  %tr
+    %th Name
+    %th
+
+  - @genders.each do |gender|
+    %tr
+      %td
+        = gender
+        (
+        = gender.abbreviation
+        )
+      %td
+        = link_to 'Show', gender
+        = link_to 'Edit', edit_gender_path(gender)
+        = link_to 'Destroy', gender, :confirm => 'Are you sure?', :method => :delete
+
+%br/
+
+= link_to 'New Gender', new_gender_path

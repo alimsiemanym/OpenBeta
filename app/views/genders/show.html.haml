@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %strong Name:
+  = @gender.name
+
+= link_to 'Edit', edit_gender_path(@gender) 
+|
+= link_to 'Back', genders_path

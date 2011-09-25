@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110924060739) do
+ActiveRecord::Schema.define(:version => 20110924212826) do
+
+  create_table "genders", :force => true do |t|
+    t.string   "name"
+    t.string   "abbreviation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "genres", :force => true do |t|
     t.string   "name"
