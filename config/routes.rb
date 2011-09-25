@@ -1,4 +1,6 @@
 OpenBeta::Application.routes.draw do
+  resources :universes
+
   resources :ratings
 
   resources :genders

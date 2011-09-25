@@ -1,0 +1,17 @@
+#notice= notice
+
+%p
+  %strong Name:
+  = @universe.name
+
+%p
+  %strong Abbreviation:
+  = @universe.abbreviation
+
+%p
+  %strong Description:
+  = @universe.description
+
+= link_to 'Edit', edit_universe_path(@universe)
+|
+= link_to 'Back', universes_path

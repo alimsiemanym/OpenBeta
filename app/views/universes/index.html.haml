@@ -1,0 +1,22 @@
+%h1 Listing universes
+
+%table
+  %tr
+    %th Name
+    %th Abbreviation
+    %th Description
+    %th
+  
+  - @universes.each do |universe|
+    %tr
+      %td= universe.name
+      %td= universe.abbreviation
+      %td= universe.description
+      %td
+        = link_to 'Show', universe
+        = link_to 'Edit', edit_universe_path(universe)
+        = link_to 'Destroy', universe, :confirm => 'Are you sure?', :method => :delete
+
+%br/
+
+= link_to 'New Universe', new_universe_path

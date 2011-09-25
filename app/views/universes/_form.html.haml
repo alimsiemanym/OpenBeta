@@ -1,0 +1,26 @@
+= form_for(@universe) do |f|
+  - if @universe.errors.any?
+    %div#error_explanation
+      %h2
+        = pluralize(@universe.errors.count, "error")
+        prohibited this universe from being saved:
+
+      %ul
+        - @universe.errors.full_messages.each do |msg|
+          %li= msg
+
+  %div.field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %div.field
+    = f.label :abbreviation 
+    %br/
+    = f.text_field :abbreviation
+  %div.field
+    = f.label :description 
+    %br/
+    = f.text_area :description
+
+  %div.actions
+    = f.submit

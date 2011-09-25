@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925210351) do
+ActiveRecord::Schema.define(:version => 20110925212947) do
 
   create_table "genders", :force => true do |t|
     t.string   "name"
@@ -35,6 +35,16 @@ ActiveRecord::Schema.define(:version => 20110925210351) do
   end
 
   add_index "ratings", ["code"], :name => "index_ratings_on_code", :unique => true
+
+  create_table "universes", :force => true do |t|
+    t.string   "name",         :null => false
+    t.string   "abbreviation", :null => false
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "universes", ["name", "abbreviation"], :name => "index_universes_on_name_and_abbreviation", :unique => true
 
   create_table "warnings", :force => true do |t|
     t.string   "name",        :null => false
