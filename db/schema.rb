@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110924212826) do
+ActiveRecord::Schema.define(:version => 20110925205221) do
 
   create_table "genders", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20110924212826) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "genders", ["name", "abbreviation"], :name => "index_genders_on_name_and_abbreviation", :unique => true
 
   create_table "genres", :force => true do |t|
     t.string   "name"
