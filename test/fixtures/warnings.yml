@@ -5,5 +5,5 @@ one:
   description: MyText
 
 two:
-  name: MyString
-  description: MyText
+  name: MyOtherString
+  description: MyOtherText
